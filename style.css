@@ -1,0 +1,148 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body,
+input{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(176, 213, 226);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 1px;
+    cursor: pointer;
+    background-color: rgb(206, 224, 231);
+    align-items: baseline;
+}
+.forms-container{
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space between;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.title{
+    font-size: xx-large ;
+    color: black;
+    margin-bottom: 10px;
+}
+.input-field{
+    max-width: 380px;
+    width: 50%;
+    height: 30px;
+    display: grid;
+    background-color: whitesmoke;
+    margin: 1px 0;
+    border-radius: 20px;
+}
+.input-field2{
+    max-width: 380px;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    background-color: whitesmoke;
+    margin: 1px 0;
+    border-radius: 20px;
+}
+
+.input-field i{
+    text-align: center;
+    line-height: 55px;
+    color: rgb(205, 212, 214);
+    font-size: 1.3rem;
+}
+.input-field input{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: black;
+}
+
+
+button{
+    color:darkblue;
+    padding: none ;
+    background: transparent ;
+    outline: none;
+    cursor: pointer;
+}
+.bubbles img{
+    width: 50px;
+    border-radius: 50px;
+    animation: bubble 7s linear infinite ;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+
+}
+@keyframes bubbles{
+    0%{
+        transform: translateY(0);
+        opacity:0;
+
+    }
+    50%{
+        transform: translateY(0);
+        opacity:1;
+        
+    }
+    70%{
+        transform: translateY(0);
+        opacity:2;
+        
+    }
+    100%{
+        transform: translateY(0);
+        opacity:1;
+        
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 12s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 2s;
+    width: 35px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 6s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 9s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 4s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 13s;
+    width: 7 px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 1s;
+}
